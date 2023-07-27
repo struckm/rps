@@ -1,0 +1,11 @@
+version: "2.4"
+services:
+  interface:
+    build: ./rpstrackerng
+    ports:
+      - 80:80
+  api:
+    build: ./rpsapi
+    ports:
+      - 8080:8080
+    
